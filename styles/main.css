@@ -1,15 +1,46 @@
 body {
   background-color: #3cdbc0;
   font-family: "Rubik", sans-serif;
-  margin: 0;
+  --menu-text-color: #4a4a4a;
+  --main-text-color: #ffffff;
 }
 
-.menu {
+.fixed-header {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
-h1 {
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 155px;
+}
+
+.main {
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  color: var(--menu-text-color);
+}
+
+.main-text {
   font-size: 30px;
-  color: white;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 50px 10px;
+  font-size: 16px;
+  --main-bg-color: brown;
 }
