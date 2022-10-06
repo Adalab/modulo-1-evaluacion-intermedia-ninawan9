@@ -33,6 +33,7 @@ body {
   font-size: 30px;
   text-align: center;
   color: var(--main-text-color);
+  text-transform: capitalize;
 }
 
 .link {
