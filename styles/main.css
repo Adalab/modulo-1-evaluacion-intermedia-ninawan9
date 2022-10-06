@@ -35,6 +35,10 @@ body {
   color: var(--main-text-color);
 }
 
+.link {
+  text-transform: uppercase;
+}
+
 .nav-header {
   display: flex;
   font-size: 16px;
