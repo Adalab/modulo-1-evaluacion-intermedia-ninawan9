@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
-
 
 :root {
   font-family: "Rubik", sans-serif;
@@ -36,15 +35,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3CDBC0;
+  background-color: #3cdbc0;
 }
 
 .h1-main-text {
-font-size: 30px;
-text-align: center;
-color: var(--main-text-color);
-width: 11ch;
-text-transform: capitalize;
+  font-size: 30px;
+  text-align: center;
+  color: var(--main-text-color);
+  width: 11ch;
+  text-transform: capitalize;
 }
 
 a {
@@ -54,7 +53,7 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 13px;
-  color: var(--menu-text-color)
+  color: var(--menu-text-color);
 }
 
 .link {
@@ -68,10 +67,19 @@ a {
   --main-bg-color: var(--menu-text-color);
 }
 
+/*MEDIA QUERIES*/
 
-  /*MEDIA QUERIES*/
-
-  @media (min-width: 768px) {
-    .h1-main-text {
-      font-size: 40px;
+@media (min-width: 768px) {
+  .h1-main-text {
+    font-size: 40px;
   }
+
+  .fixed-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
