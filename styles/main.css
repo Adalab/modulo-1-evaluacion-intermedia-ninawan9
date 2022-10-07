@@ -1,35 +1,47 @@
-body {
+* {margin: 0;
+padding: 0;
+box-sizing: border-box}
+
+:root {
   font-family: "Rubik", sans-serif;
   --menu-text-color: #4a4a4a;
-  --main-text-color: #ffffff;}
+  --main-text-color: #ffffff;
+}
 
 .fixed-header {
+  position: fixed;
   width: 100vw;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
 }
 
 .logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 155px;
-}
-
-.main {
-  width: 100vw;
-  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 155px;
+ 
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   color: var(--menu-text-color);
   background-color: #3CDBC0;
-  height: 90vh;
 }
 
 .main-text {
+  margin-top: 70px;
+  width: 50%;
   font-size: 30px;
   text-align: center;
   color: var(--main-text-color);
@@ -43,13 +55,31 @@ body {
 a {
   text-decoration: none;
   display: flex;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 13px;
   color: var(--menu-text-color)
 }
 
-.nav-header {
+.nav-links {
   display: flex;
   font-size: 16px;
   width: 100%;
-  margin-bottom: 13px;
   --main-bg-color: (var(--menu-text-color);
+
+  /*MEDIA QUERIES*/
+  
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 40px;
+  }
+
+/*.main {
+  @media all and (min-width: 1200px) {
+display:flex;
+  } */
+
+
+  @media all (min-width: 1200px) {
+  }
